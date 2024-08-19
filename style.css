@@ -1,0 +1,162 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 0;
+}
+
+.container {
+text-align: center;
+}
+
+.move-icon{
+    height: 50px;
+}
+
+.move-button{
+    background-color: transparent;
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0px rgba(0, 123, 255, 0.5);
+}
+
+.move-button:hover {
+box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+}
+
+.move-button:active, .active {
+background-color: #0056b3;
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.js-score{
+    margin: 30px 0px;
+    /* text-align: center; */
+}
+
+/* .js-moves{
+    text-align: center;
+} */
+
+.reset-button{
+    font-size: medium;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0px rgba(0, 123, 255, 0.5);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+}
+
+.reset-button:hover{
+    box-shadow: 0 0 50px rgba(0, 123, 255, 0.5);
+}
+
+.reset-button:active, .active {
+background-color: #0056b3;
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.pre-move{
+    opacity: 0;
+}
+
+@keyframes changeFontR {
+    0%, 100% { font-family: 'Monoton', cursive;}
+    25% { font-family: 'Righteous', cursive; }
+    50% { font-family: 'Lobster', cursive; }
+    75% { font-family: 'Indie Flower', cursive;}
+}
+@keyframes changeFontO {
+    0%, 100% { font-family: 'Righteous', cursive; }
+    25% { font-family: 'Lobster', cursive; }
+    50% { font-family: 'Indie Flower', cursive; }
+    75% { font-family: 'Permanent Marker', cursive; }
+}
+@keyframes changeFontC {
+    0%, 100% { font-family: 'Lobster', cursive; }
+    25% { font-family: 'Indie Flower', cursive; }
+    50% { font-family: 'Permanent Marker', cursive; }
+    75% { font-family: 'Monoton', cursive; }
+}
+@keyframes changeFontK {
+    0%, 100% { font-family: 'Indie Flower', cursive; }
+    25% { font-family: 'Permanent Marker', cursive; }
+    50% { font-family: 'Monoton', cursive; }
+    75% { font-family: 'Righteous', cursive; }
+}
+@keyframes changeFontP {
+    0%, 100% { font-family: 'Permanent Marker', cursive; }
+    25% { font-family: 'Monoton', cursive; }
+    50% { font-family: 'Righteous', cursive; }
+    75% { font-family: 'Lobster', cursive; }
+}
+@keyframes changeFontA {
+    0%, 100% { font-family: 'Monoton', cursive; }
+    25% { font-family: 'Righteous', cursive; }
+    50% { font-family: 'Lobster', cursive; }
+    75% { font-family: 'Indie Flower', cursive; }
+}
+@keyframes changeFontE {
+    0%, 100% { font-family: 'Righteous', cursive; }
+    25% { font-family: 'Lobster', cursive; }
+    50% { font-family: 'Indie Flower', cursive; }
+    75% { font-family: 'Permanent Marker', cursive; }
+}
+@keyframes changeFontS {
+    0%, 100% { font-family: 'Lobster', cursive; }
+    25% { font-family: 'Indie Flower', cursive; }
+    50% { font-family: 'Permanent Marker', cursive; }
+    75% { font-family: 'Monoton', cursive; }
+}
+@keyframes changeFontI {
+    0%, 100% { font-family: 'Indie Flower', cursive; }
+    25% { font-family: 'Permanent Marker', cursive; }
+    50% { font-family: 'Monoton', cursive; }
+    75% { font-family: 'Righteous', cursive; }
+}
+
+.game-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.game-text span {
+    font-size: 3rem;
+    margin: 0 5px;
+    margin-top: 50px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.R { animation-name: changeFontR; }
+.O { animation-name: changeFontO; }
+.C { animation-name: changeFontC; }
+.K { animation-name: changeFontK; }
+.P { animation-name: changeFontP; }
+.A { animation-name: changeFontA; }
+.E { animation-name: changeFontE; }
+.S { animation-name: changeFontS; }
+.I { animation-name: changeFontI; }
