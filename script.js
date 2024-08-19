@@ -17,13 +17,13 @@ function pickComputerMove() {
 
     //comparing and storing computer's move
     if (randomnumber >= 0 && randomnumber < 1 / 3) {
-        computerMove = 'Rock';
+        computerMove = 'rock';
     }
     else if (randomnumber >= 1 / 3 && randomnumber < 2 / 3) {
-        computerMove = 'Paper';
+        computerMove = 'paper';
     }
     else if (randomnumber >= 2 / 3 && randomnumber < 1) {
-        computerMove = 'Scissors';
+        computerMove = 'scissors';
     }
 
     return computerMove;
@@ -37,41 +37,41 @@ function playGame(playerMove) {
     let result = ' ';
 
     // comparing and storing the result
-    if (playerMove === 'Scissors') {
+    if (playerMove === 'scissors') {
 
-        if (computerMove === 'Rock') {
+        if (computerMove === 'rock') {
             result = 'You Lose';
         }
-        else if (computerMove === 'Paper') {
+        else if (computerMove === 'paper') {
             result = 'You Win';
         }
-        else if (computerMove === 'Scissors') {
+        else if (computerMove === 'scissors') {
             result = 'Match Is A Tie';
         }
     }
 
-    else if (playerMove === 'Paper') {
+    else if (playerMove === 'paper') {
 
-        if (computerMove === 'Rock') {
+        if (computerMove === 'rock') {
             result = 'You Win';
         }
-        else if (computerMove === 'Paper') {
+        else if (computerMove === 'paper') {
             result = 'Match Is A Tie';
         }
-        else if (computerMove === 'Scissors') {
+        else if (computerMove === 'scissors') {
             result = 'You Lose';
         }
     }
 
-    else if (playerMove === 'Rock') {
+    else if (playerMove === 'rock') {
 
-        if (computerMove === 'Rock') {
+        if (computerMove === 'rock') {
             result = 'Match Is A Tie';
         }
-        else if (computerMove === 'Paper') {
+        else if (computerMove === 'paper') {
             result = 'You Lose';
         }
-        else if (computerMove === 'Scissors') {
+        else if (computerMove === 'scissors') {
             result = 'You Win';
         }
     }
